@@ -5,6 +5,9 @@ def randomSearch(items:list, target) -> int:
     #Randomly choose an item from the list and if it isn't the target value try again.
     #print out the amount of tries it took and return the index of the target value
     j=0
+    if target not in items:
+        print(j)
+        return -1
     while True:
         i=random.randint(0,len(items)-1)
         j+=1
@@ -22,7 +25,7 @@ def linearSearch(items:list, target) ->tuple[int,int]:
       check+=1
       if items[i]==target:
             return i, check
-  return -1, check
+  return -1
 
 pass
 
