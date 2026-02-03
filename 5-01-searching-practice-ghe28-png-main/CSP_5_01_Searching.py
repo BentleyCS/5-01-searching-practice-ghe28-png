@@ -25,7 +25,7 @@ def linearSearch(items:list, target) ->tuple[int,int]:
       check+=1
       if items[i]==target:
             return i, check
-  return -1
+  return -1,check
 
 pass
 
@@ -47,9 +47,5 @@ def binarySearch(items:list, target) -> tuple[int,int]:
         else:
             high=mid-1
     return -1
-
-
-
-
 
     pass
